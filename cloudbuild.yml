@@ -4,7 +4,7 @@ steps:
 - name: 'python:3.12'
   args: ['-m', 'pytest', 'tests']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/helloworld', '.']
+  args: ['build', '-t', 'gcr.io/leafy-summer-405104/helloworld', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT_ID/helloworld']
-images: ['gcr.io/$PROJECT_ID/helloworld']
+  args: ['push', 'gcr.io/leafy-summer-405104/helloworld']
+images: ['gcr.io/leafy-summer-405104/helloworld']
