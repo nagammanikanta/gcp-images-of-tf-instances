@@ -1,3 +1,4 @@
 {
-    "terraform.experimentalFeatures.validateOnSave": true
+    "terraform.experimentalFeatures.validateOnSave": true,
+    "cloudcode.duetAI.inlineSuggestions.enableAuto": false
 }

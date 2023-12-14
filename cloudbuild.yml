@@ -1,0 +1,10 @@
+steps:
+- name: 'python:3.12'
+  args: ['-m', 'pip', 'install', '-r', 'requirements.txt']
+- name: 'python:3.12'
+  args: ['-m', 'pytest', 'tests']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/helloworld', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/$PROJECT_ID/helloworld']
+images: ['gcr.io/$PROJECT_ID/helloworld']
