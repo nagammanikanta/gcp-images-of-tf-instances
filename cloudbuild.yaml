@@ -1,10 +1,10 @@
+
 steps:
-- name: 'python:3.12'
-  args: ['-m', 'pip', 'install', '-r', 'requirements.txt']
-- name: 'python:3.12'
-  args: ['-m', 'pytest', 'tests']
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/leafy-summer-405104/helloworld', '.']
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/leafy-summer-405104/helloworld']
-images: ['gcr.io/leafy-summer-405104/helloworld']
+- name: 'gcr.io/cloud-builders/terraform'
+  args: ['init']
+- name: 'gcr.io/cloud-builders/terraform'
+  args: ['apply', '-auto-approve']
+options:
+  substitutions:
+    _BUCKET: 'my-bucket'
+    _SOURCE_DIR: 'my-source-dir'
