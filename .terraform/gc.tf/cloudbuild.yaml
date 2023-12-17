@@ -5,5 +5,5 @@ steps:
   args: ['apply', '-auto-approve']
 options:
   substitutions:
-    _BUCKET: 'my-bucket'
-    _SOURCE_DIR: 'my-source-dir'
+    _BUCKET: 'us-my-bucket'
+    _SOURCE_DIR: 'C:\Users\cc\Desktop\mani devops\terraformvsc\.terraform\gc.tf\cloudbuild.yaml'
