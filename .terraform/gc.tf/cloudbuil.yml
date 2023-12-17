@@ -1,0 +1,9 @@
+steps:
+- name: 'gcr.io/cloud-builders/terraform'
+  args: ['init']
+- name: 'gcr.io/cloud-builders/terraform'
+  args: ['apply', '-auto-approve']
+options:
+  substitutions:
+    _BUCKET: 'my-bucket'
+    _SOURCE_DIR: 'my-source-dir'
