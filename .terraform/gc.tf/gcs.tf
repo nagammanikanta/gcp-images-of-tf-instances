@@ -1,5 +1,5 @@
-resource "google_storage_bucket" "static-bucket" {
-  name          = "static-bucket"
+resource "google_storage_bucket" "us-my-bucket" {
+  name          = "us-my-bucket"
   location      = "US"
   force_destroy = true
 
