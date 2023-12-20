@@ -31,10 +31,10 @@ resource "google_network_connectivity_spoke" "spoke-tf" {
   }
 }
 
-resource "google_compute_router_nat" "nat_type" {
+resource "google_compute_router_nat" "nat-tf" {
   provider                            = google-beta
 
-  name                                = var.nat_type
+  name                                = var.nat-tf
   router                              = google_compute_router.router-tf.name
   region                              = google_compute_router.router-tf.region
   source_subnetwork_ip_ranges_to_nat  = "LIST_OF_SUBNETWORKS"

@@ -261,7 +261,7 @@ variable "spoke-tf" {
   
 }
 
-variable "nat_type" {
+variable "nat-tf" {
   type = string
   default = "my-nat"
   
