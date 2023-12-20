@@ -242,5 +242,13 @@ variable "port_range" {
   
 }
 
+variable "hub-tf" {
+  type = string
+  default = "my-hub-tf"
+   description = "vpc hub for inter vpc nat"
+}
+
+
+
   
 
