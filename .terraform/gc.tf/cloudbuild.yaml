@@ -1,9 +1,0 @@
-steps:
-- name: 'gcr.io/cloud-builders/terraform'
-  args: ['init']
-- name: 'gcr.io/cloud-builders/terraform'
-  args: ['apply', '-auto-approve']
-options:
-  substitutions:
-    _BUCKET: 'us-my-bucket'
-    _SOURCE_DIR: 'C:\Users\cc\Desktop\mani devops\terraformvsc\.terraform\gc.tf\cloudbuild.yaml'
