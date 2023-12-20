@@ -19,7 +19,7 @@ resource "google_network_connectivity_spoke" "spoke-tf" {
   
 
   name        = var.spoke-tf
-  location    = var.location
+  location    = "global"
   
   hub         =  google_network_connectivity_hub.hub-tf.id
   linked_vpc_network {
