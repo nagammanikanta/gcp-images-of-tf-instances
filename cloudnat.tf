@@ -3,7 +3,7 @@
 resource "google_compute_router" "router-tf" {
 
 
-  name     = "my-router"
+  name     = var.router-tf
   region   = google_compute_subnetwork.subnet-tf.region
   network  = google_compute_network.custom-vpc-tf.id
 }
@@ -18,8 +18,8 @@ resource "google_network_connectivity_hub" "hub-tf" {
 resource "google_network_connectivity_spoke" "spoke-tf" {
   
 
-  name        = "my-spoke"
-  location    = "global"
+  name        = var.spoke-tf
+  location    = var.location
   
   hub         =  google_network_connectivity_hub.hub-tf.id
   linked_vpc_network {
@@ -34,7 +34,7 @@ resource "google_network_connectivity_spoke" "spoke-tf" {
 resource "google_compute_router_nat" "nat_type" {
   provider                            = google-beta
 
-  name                                = "my-router-nat"
+  name                                = var.nat_type
   router                              = google_compute_router.router-tf.name
   region                              = google_compute_router.router-tf.region
   source_subnetwork_ip_ranges_to_nat  = "LIST_OF_SUBNETWORKS"

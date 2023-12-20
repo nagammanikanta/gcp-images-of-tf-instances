@@ -249,6 +249,21 @@ variable "hub-tf" {
 }
 
 
-
+variable "router-tf" {
+  type = string
+  default = "my-router"
   
+}
+
+variable "spoke-tf" {
+  type = string
+  default = "my-spoke"
+  
+}
+
+variable "nat_type" {
+  type = string
+  default = "my-nat"
+  
+}
 
