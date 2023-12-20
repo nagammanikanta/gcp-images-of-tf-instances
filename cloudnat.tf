@@ -4,7 +4,7 @@ resource "google_compute_router" "router-tf" {
 
 
   name     = var.router-tf
-  region   = google_compute_subnetwork.subnet-tf.region
+  region   = var.region
   network  = google_compute_network.custom-vpc-tf.id
 }
 
@@ -37,7 +37,7 @@ resource "google_compute_router_nat" "nat-tf" {
   
   name                                = var.nat-tf
   router                              = google_compute_router.router-tf.name
-  region                              = google_compute_router.router-tf.region
+  region                              = var.region
   source_subnetwork_ip_ranges_to_nat  = "LIST_OF_SUBNETWORKS"
   enable_dynamic_port_allocation      = false
   enable_endpoint_independent_mapping = false
