@@ -34,6 +34,7 @@ resource "google_network_connectivity_spoke" "spoke-tf" {
 resource "google_compute_router_nat" "nat-tf" {
   provider                            = google-beta
   project =  var.project_id
+  
   name                                = var.nat-tf
   router                              = google_compute_router.router-tf.name
   region                              = google_compute_router.router-tf.region
