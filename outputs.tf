@@ -90,10 +90,7 @@ output "sa_tf" {
    value = google_compute_region_backend_service.backend-tf
    
  }
- output "nat-tf" {
-   value = google_compute_router_nat.nat-tf
-   
- }
+ 
 
  output "router-tf" {
    value = google_compute_router.router-tf
