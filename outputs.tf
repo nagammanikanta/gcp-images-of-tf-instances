@@ -1,3 +1,5 @@
+
+/*
 output "instance" {
   value     = google_compute_instance.instance_terra
   sensitive = true
@@ -97,6 +99,6 @@ output "router-tf" {
 
 
 }
-
+*/
 
 

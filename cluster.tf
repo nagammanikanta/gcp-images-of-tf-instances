@@ -1,5 +1,5 @@
 
-
+/*
 resource "google_container_cluster" "primary-cluster" {
   name     = var.primary-cluster
   location = var.zone
@@ -29,3 +29,4 @@ resource "google_container_node_pool" "primary_preemptible_nodes" {
     ]
   }
 }
+*/

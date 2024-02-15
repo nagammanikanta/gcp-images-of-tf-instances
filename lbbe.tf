@@ -1,3 +1,4 @@
+/*
 // Forwarding rule for External Network Load Balancing using Backend Services
 resource "google_compute_forwarding_rule" "forwarding-tf" {
 
@@ -23,3 +24,4 @@ resource "google_compute_region_health_check" "hc-tf" {
     port = "80"
   }
 }
+*/

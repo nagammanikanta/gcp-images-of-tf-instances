@@ -1,5 +1,5 @@
 
-
+/*
 resource "google_compute_network" "custom-vpc-tf" {
   name                    = var.custom-vpc-tf
   auto_create_subnetworks = false
@@ -12,6 +12,6 @@ resource "google_compute_subnetwork" "subnet-tf" {
   purpose       = "PRIVATE"
 
 }
-
+*/
 
 
