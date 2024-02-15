@@ -2,13 +2,13 @@ resource "google_compute_network_peering" "peering1" {
   name         = var.peering1
   network      = google_compute_network.vpc-1.self_link
   peer_network = google_compute_network.vpc-2.self_link
-  
+
 }
 resource "google_compute_network_peering" "peering2" {
   name         = var.peering2
   network      = google_compute_network.vpc-2.self_link
   peer_network = google_compute_network.vpc-1.self_link
-  
+
 }
 
 
