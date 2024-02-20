@@ -1,4 +1,4 @@
-/*
+
 resource "google_sql_database" "database-tf" {
   name     = var.database-tf
   instance = google_sql_database_instance.instance-sql-tf.name
@@ -24,4 +24,3 @@ resource "google_sql_database_instance" "instance-sql-tf" {
 }
 
 
-*/
