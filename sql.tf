@@ -23,4 +23,10 @@ resource "google_sql_database_instance" "instance-sql-tf" {
   deletion_protection = false
 }
 
+resource "google_sql_user" "my_user" {
+  instance = var.instance-sql-tf
+  name     = "my-user"
+  project  = var.project_id
+  type     = "CLOUD_IAM_USER"
+}
 

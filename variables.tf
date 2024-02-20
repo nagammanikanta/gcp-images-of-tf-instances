@@ -250,3 +250,9 @@ variable "nat-tf" {
 
 }
 
+variable "my_user" {
+  type = string
+  default = "my-user"
+  
+}
+
