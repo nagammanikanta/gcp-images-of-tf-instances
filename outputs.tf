@@ -78,12 +78,6 @@ output "instance-sql-tf" {
   sensitive = true
 
 }
-output "users" {
-  value     = google_sql_user.users.name
-  sensitive = true
-
-
-}
 output "forwarding-tf" {
   value = google_compute_forwarding_rule.forwarding-tf
 }

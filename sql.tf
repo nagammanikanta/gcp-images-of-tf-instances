@@ -23,11 +23,5 @@ resource "google_sql_database_instance" "instance-sql-tf" {
   deletion_protection = false
 }
 
-resource "google_sql_user" "users" {
-  name     = var.users
-  instance = google_sql_database_instance.instance-sql-tf.name
-  host     = var.host
-  password = var.password
 
-}
 */

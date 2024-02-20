@@ -181,23 +181,6 @@ variable "availability_type" {
 
 }
 
-variable "users" {
-  type    = string
-  default = "me"
-
-}
-
-variable "password" {
-  type    = string
-  default = "changeme"
-
-}
-
-variable "host" {
-  type    = string
-  default = "me.com"
-
-}
 
 
 
