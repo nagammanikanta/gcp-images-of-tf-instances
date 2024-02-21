@@ -20,13 +20,12 @@ resource "google_sql_database_instance" "instance-sql-tf" {
     }
   }
 
-  deletion_protection = false
+  deletion_protection = var.deletion_protection
 }
 
-resource "google_sql_user" "my_user" {
-  instance = var.instance-sql-tf
-  name     = "my-user"
-  project  = var.project_id
-  type     = "CLOUD_IAM_USER"
+resource "google_sql_user" "users" {
+  name     = var.user
+  instance = google_sql_database_instance.instance-sql-tf.name
+  host     = var.host
+  password = var.password
 }
-
