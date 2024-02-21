@@ -1,4 +1,4 @@
-
+/*
 
 resource "google_compute_router" "router-tf" {
 
@@ -30,3 +30,4 @@ resource "google_network_connectivity_spoke" "spoke-tf" {
     uri = google_compute_network.custom-vpc-tf.self_link
   }
 }
+*/

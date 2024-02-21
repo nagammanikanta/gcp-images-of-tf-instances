@@ -1,4 +1,4 @@
-
+/*
 
 output "instance" {
   value     = google_compute_instance.instance_terra
@@ -93,6 +93,7 @@ output "router-tf" {
 
 
 }
+*/
 
 
 
