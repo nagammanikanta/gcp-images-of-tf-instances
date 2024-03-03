@@ -1,4 +1,4 @@
-
+/*
 resource "google_service_account" "sa_tf" {
   account_id   = var.sa_tf_account_id
   display_name = var.sa_tf_display_name
@@ -25,7 +25,7 @@ resource "google_compute_instance" "instance_terra" {
     }
   }
 }
-
+*/
 
 
 

@@ -1,4 +1,4 @@
-
+/*
 resource "google_storage_bucket" "static-bucket" {
   name          = var.static-bucket
   location      = var.location
@@ -7,4 +7,5 @@ resource "google_storage_bucket" "static-bucket" {
   uniform_bucket_level_access = true
 
 }
+*/
 
