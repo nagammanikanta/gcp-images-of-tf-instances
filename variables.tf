@@ -251,25 +251,25 @@ variable "nat-tf" {
 }
 
 variable "user" {
-  type = string
+  type    = string
   default = "my-user"
-  
+
 }
 
 variable "deletion_protection" {
 
-  type = bool
+  type    = bool
   default = false
-  
+
 }
 
 variable "password" {
-  type =string
+  type    = string
   default = "changeme"
-  
+
 }
 variable "host" {
-  type = string
+  type    = string
   default = "me.com"
-  
+
 }
