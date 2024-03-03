@@ -1,4 +1,4 @@
-/*
+
 
 resource "google_compute_network" "custom-vpc-tf" {
   name                    = var.custom-vpc-tf
@@ -12,6 +12,6 @@ resource "google_compute_subnetwork" "subnet-tf" {
   purpose       = "PRIVATE"
 
 }
-*/
+
 
 
